@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viajes por colombia</title>
+    <script src="js/utilidades.js"></script>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    
+    
+
+<script>
+
+window.onload = function crearUI() {
+
+
+var divFlexTop =crearNodo('div')
+divFlexTop.setAttribute('class','flexcontenedortop')
+
+var divFlextopIzquierda =crearNodo('div')
+divFlextopIzquierda.setAttribute('class','flexContenedorIzquierda')
+
+var imagenAvionTop = crearNodoImagen('Avion.jpeg','imagenTop')
+
+var divFlexTopDerecha = crearNodo('div')
+divFlexTopDerecha.setAttribute('class','flexContenedorDerecha')
+
+adicionarNodoAContenedor(imagenAvionTop,divFlexTopDerecha)
+
+var item1 =crearNodoConTexto('a',"home |")
+var item2 =crearNodoConTexto('a',"service |")
+var item3 =crearNodoConTexto('a',"event |")
+var item4 =crearNodoConTexto('a',"about |")
+var item5 =crearNodoConTexto('a',"contacts |")
+
+adicionarNodoAContenedor(item1,divFlextopIzquierda)
+adicionarNodoAContenedor(item2,divFlextopIzquierda)
+adicionarNodoAContenedor(item3,divFlextopIzquierda)
+adicionarNodoAContenedor(item4,divFlextopIzquierda)
+adicionarNodoAContenedor(item5,divFlextopIzquierda)
+
+adicionarNodoAContenedor(divFlexTopDerecha,divFlexTop)
+adicionarNodoAContenedor(divFlextopIzquierda,divFlexTop)
+
+adicionarNodoBody(divFlexTop)
+
+var divFlexOferta = crearNodo('div')
+divFlexOferta.setAttribute('class','flexcontenedorOferta')
+
+var divColorFondoDivOferta = crearNodo('div')
+divColorFondoDivOferta.setAttribute('class','colorDiv04')
+
+var h2PrecioOferta =crearNodoConTexto('h2',"$8,450")
+h2PrecioOferta.setAttribute('class','flexcontenedor')
+
+adicionarNodoAContenedor(h2PrecioOferta,divColorFondoDivOferta)
+
+var h2LugarViajeOferta =crearNodoConTexto('h2',"Venice Italy")
+h2LugarViajeOferta.setAttribute('class','flexcontenedor')
+h2LugarViajeOferta.setAttribute('class','colordiv03')
+
+
+var p1Oferta =crearNodoConTexto('p',"travel a free responsive template by templanemo.")
+
+var p2Oferta =crearNodoConTexto('p',"all image used in this template are from unsples")
+
+
+var botonPrebooking = crearNodoConTexto('button','Pre-Booking')
+botonPrebooking.setAttribute('class','colorDiv01')
+
+
+adicionarNodoAContenedor(divColorFondoDivOferta,divFlexOferta)
+adicionarNodoAContenedor(h2LugarViajeOferta,divFlexOferta)
+adicionarNodoAContenedor(p1Oferta,divFlexOferta)
+adicionarNodoAContenedor(p2Oferta,divFlexOferta)
+adicionarNodoAContenedor(botonPrebooking,divFlexOferta)
+
+adicionarNodoBody(divFlexOferta)
+
+
+
+var divContenedor = crearNodo('div')
+divContenedor.setAttribute('class','flexcontenedor')
+
+
+var divOfertaItalia = crearNodo('div')
+divOfertaItalia.setAttribute('class','flexcontenedor')
+divOfertaItalia.setAttribute('class','colordiv02')
+
+var divColorFondoNombreLugar = crearNodo('div')
+divColorFondoNombreLugar.setAttribute('class','colorDiv01')
+
+var h2Italy =crearNodoConTexto('h2',"Italy")
+
+adicionarNodoAContenedor(h2Italy,divColorFondoNombreLugar)
+
+var imagenItalia = crearNodoImagen('Italia.jpeg','imagenItalia')
+
+var pLugaresItalia =crearNodoConTexto('p',"rome, milan, naples")
+pLugaresItalia.setAttribute('class','configuracionP1')
+
+var pHotelesItalia =crearNodoConTexto('p',"SILVER,4 NIGHTS, 5 STARS")
+pHotelesItalia.setAttribute('class','configuracionP2')
+
+var divBotonItalia = crearNodo('div')
+divBotonItalia.setAttribute('class','colorDiv01')
+
+var botonItalia = crearNodoConTexto('button','$1,800 BOOK NOW')
+
+adicionarNodoAContenedor(botonItalia,divBotonItalia)
+
+adicionarNodoAContenedor(divColorFondoNombreLugar, divOfertaItalia)
+adicionarNodoAContenedor(imagenItalia, divOfertaItalia)
+adicionarNodoAContenedor(pLugaresItalia, divOfertaItalia)
+adicionarNodoAContenedor(pHotelesItalia, divOfertaItalia)
+adicionarNodoAContenedor(divBotonItalia, divOfertaItalia)
+
+adicionarNodoAContenedor(divOfertaItalia,divContenedor)
+
+
+var divOfertaFrancia = crearNodo('div')
+divOfertaFrancia.setAttribute('class','flexcontenedor')
+divOfertaFrancia.setAttribute('class','colordiv02')
+
+var divColorFondoNombreLugar = crearNodo('div')
+divColorFondoNombreLugar.setAttribute('class','colorDiv01')
+
+var h2Francia =crearNodoConTexto('h2',"France")
+
+adicionarNodoAContenedor(h2Francia,divColorFondoNombreLugar)
+
+var imagenFrancia = crearNodoImagen('Italia.jpeg','imagenFrancia')
+
+var pLugaresFrancia =crearNodoConTexto('p',"Paris, Marseille, Lyon")
+pLugaresFrancia.setAttribute('class','configuracionP1')
+
+var pHotelesFrancia =crearNodoConTexto('p',"NEW PALACE,5 NIGHTS, 5 STARS")
+pHotelesFrancia.setAttribute('class','configuracionP2')
+
+var divBotonFrancia = crearNodo('div')
+divBotonFrancia.setAttribute('class','colorDiv01')
+
+var botonFrancia = crearNodoConTexto('button','$2,300 BOOK NOW ')
+
+adicionarNodoAContenedor(botonFrancia,divBotonFrancia)
+
+adicionarNodoAContenedor(divColorFondoNombreLugar, divOfertaFrancia)
+adicionarNodoAContenedor(imagenFrancia, divOfertaFrancia)
+adicionarNodoAContenedor(pLugaresFrancia, divOfertaFrancia)
+adicionarNodoAContenedor(pHotelesFrancia, divOfertaFrancia)
+adicionarNodoAContenedor(divBotonFrancia, divOfertaFrancia)
+
+adicionarNodoAContenedor(divOfertaFrancia,divContenedor)
+
+var divOfertaGermany = crearNodo('div')
+divOfertaGermany.setAttribute('class','flexcontenedor')
+divOfertaGermany.setAttribute('class','colordiv02')
+
+var divColorFondoNombreLugar = crearNodo('div')
+divColorFondoNombreLugar.setAttribute('class','colorDiv01')
+
+var h2Germany =crearNodoConTexto('h2',"Germany")
+
+adicionarNodoAContenedor(h2Germany,divColorFondoNombreLugar)
+
+var imagenGermany = crearNodoImagen('Italia.jpeg','imagenGermany')
+
+var pLugaresGermany =crearNodoConTexto('p',"Berlin, Hamburg, Munich")
+pLugaresGermany.setAttribute('class','configuracionP1')
+
+var pHotelesGermany =crearNodoConTexto('p',"LUYE HOTEL,5 NIGHTS, 6 STARS")
+pHotelesGermany.setAttribute('class','configuracionP2')
+
+var divBotonGermany = crearNodo('div')
+divBotonGermany.setAttribute('class','colorDiv01')
+
+var botonGermany = crearNodoConTexto('button','$3,100 BOOK NOW ')
+
+adicionarNodoAContenedor(botonGermany,divBotonGermany)
+
+adicionarNodoAContenedor(divColorFondoNombreLugar, divOfertaGermany)
+adicionarNodoAContenedor(imagenGermany, divOfertaGermany)
+adicionarNodoAContenedor(pLugaresGermany, divOfertaGermany)
+adicionarNodoAContenedor(pHotelesGermany, divOfertaGermany)
+adicionarNodoAContenedor(divBotonGermany, divOfertaGermany)
+
+adicionarNodoAContenedor(divOfertaGermany,divContenedor)
+
+
+var divOfertaSpain = crearNodo('div')
+divOfertaSpain.setAttribute('class','flexcontenedor')
+divOfertaSpain.setAttribute('class','colordiv02')
+
+
+var divColorFondoNombreLugar = crearNodo('div')
+divColorFondoNombreLugar.setAttribute('class','colorDiv01')
+
+var h2Spain =crearNodoConTexto('h2',"Spain")
+
+adicionarNodoAContenedor(h2Spain,divColorFondoNombreLugar)
+
+var imagenSpain = crearNodoImagen('Italia.jpeg','imagenSpain')
+
+var pLugaresSpain =crearNodoConTexto('p',"Madrid, Barcelona Valencia")
+pLugaresSpain.setAttribute('class','configuracionP1')
+
+var pHotelesSpain =crearNodoConTexto('p',"GOOD HOTAL,4 NIGHTS, 6 STARS")
+pHotelesSpain.setAttribute('class','configuracionP2')
+
+var divBotonSpain = crearNodo('div')
+divBotonSpain.setAttribute('class','colorDiv01')
+
+var botonSpain = crearNodoConTexto('button','$4.800 BOOK NOW')
+
+adicionarNodoAContenedor(botonSpain,divBotonSpain)
+
+adicionarNodoAContenedor(divColorFondoNombreLugar, divOfertaSpain)
+adicionarNodoAContenedor(imagenSpain, divOfertaSpain)
+adicionarNodoAContenedor(pLugaresSpain, divOfertaSpain)
+adicionarNodoAContenedor(pHotelesSpain, divOfertaSpain)
+adicionarNodoAContenedor(divBotonSpain, divOfertaSpain)
+
+adicionarNodoAContenedor(divOfertaSpain,divContenedor)
+
+adicionarNodoBody(divContenedor)
+
+var divImagenes = crearNodo('div')
+divImagenes.setAttribute('class','flexcontenedor')
+
+var imagenCoheteUno = ('cohete.jpeg', 'imagenDeCohete')
+var imagenPalmeraUno = ('Palmera.jpeg', 'imagenDePalmera')
+var imagenDelfinesUno = ('Delfin.jpeg', 'imagenDeDelfin')
+var imagenCoheteDos = ('cohete.jpeg', 'imagenDeCohete')
+var imagenPalmeraDos = ('Palmera.jpeg', 'imagenDePalmera')
+var imagenDelfinesDos = ('Delfin.jpeg', 'imagenDeDelfin')
+var p1Oferta =crearNodoConTexto('p',"travel a free responsive template by templanemo.")
+
+adicionarNodoAContenedor(imagenCoheteUno, divImagenes)
+adicionarNodoAContenedor(imagenDelfinesUno, divImagenes)
+adicionarNodoAContenedor(imagenPalmeraUno, divImagenes)
+adicionarNodoAContenedor(imagenCoheteDos, divImagenes)
+adicionarNodoAContenedor(imagenDelfinesDos, divImagenes)
+adicionarNodoAContenedor(imagenPalmeraDos, divImagenes)
+
+adicionarNodoBody(divImagenes)
+
+var divImagenesFed = crearNodo('div')
+divImagenesFed.setAttribute('class','flexcontenedor')
+
+var imagenAvionFed = ('Avion.jpeg','imagenDeavion')
+var imagenIconFed = ('IconFondo.png','imagenIconFed')
+var imagenCopyright = ('Copyright.png','imagenCopyright')
+
+adicionarNodoAContenedor(imagenAvionFed,divImagenesFed)
+adicionarNodoAContenedor(imagenIconFed,divImagenesFed)
+adicionarNodoAContenedor(imagenCopyright,divImagenesFed)
+
+adicionarNodoBody(divImagenesFed)
+
+}
+
+
+</script>
+
+</body>
+</html>
